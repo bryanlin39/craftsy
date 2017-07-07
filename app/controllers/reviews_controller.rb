@@ -1,5 +1,8 @@
 class ReviewsController < ApplicationController
-before_action :find_product
+  before_action :find_product
+  before_action do
+    redirect_to new_user_session_path unless current_user
+  end
 
   def new
     @product = Product.find(params[:product_id])

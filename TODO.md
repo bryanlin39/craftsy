@@ -2,13 +2,14 @@
 
 ### Core Functionality
 - [x] User model - username, email, admin
-  - [ ] Has many reviews
-  - [ ] Add/edit/delete their own reviews
-- [ ] Admin authorization
+  - [x] Has many reviews
+  - [x] Add/edit/delete their own reviews
+- [x] Admin authorization
   - [x] Add/edit/delete products
-  - [ ] Delete any reviews
-- [ ] Review model - content, rating
-  - [ ] Belongs to User
+  - [x] Delete any reviews
+- [x] Review model - content, rating
+  - [x] Belongs to User
+  - [x] Belongs to Product
 - [x] Product model - name, picture, description, price, average rating
   - [x] Belongs to Admin
 - [ ] Root page - welcome and intro
@@ -16,8 +17,9 @@
 - [x] View all products
 - [x] View individual product
 - [ ] Profile page for each user to see their reviews
-- [ ] Authorization - Users for reviews, Admin for products
+- [x] Authorization - Users for reviews, Admin for products
   * Unauthenticated can see landing page and all products and individual products
+- [ ] Authorization - Users can only edit/delete THEIR OWN reviews
 - [x] Navbar
 - [x] Devise Authentication
 - [ ] Factory Girl testing
