@@ -38,6 +38,9 @@ class ProductsController < ApplicationController
 
   def destroy
     @product = Product.find(params[:id])
+    @product.reviews.each do |review|
+      review.destroy
+    end
     @product.destroy
     redirect_to products_path, notice: 'Product successfully removed'
   end

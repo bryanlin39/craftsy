@@ -555,6 +555,8 @@
         1,
         null,
         null,
+        1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/craftsy/app/models/application_record.rb": [
@@ -565,6 +567,15 @@
       "/Users/Guest/Desktop/craftsy/app/controllers/application_controller.rb": [
         1,
         1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/Guest/Desktop/craftsy/app/helpers/application_helper.rb": [
@@ -593,7 +604,6 @@
       ],
       "/Users/Guest/Desktop/craftsy/app/controllers/products_controller.rb": [
         1,
-        null,
         1,
         0,
         null,
@@ -605,6 +615,39 @@
         1,
         0,
         null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        null,
+        null,
+        1,
         null,
         1,
         0,
@@ -629,10 +672,32 @@
       "/Users/Guest/Desktop/craftsy/app/models/product.rb": [
         1,
         1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/Guest/Desktop/craftsy/app/models/review.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/craftsy/spec/factories/products.rb": [
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/craftsy/spec/factories/reviews.rb": [
         1,
         1,
         1,
@@ -695,13 +760,25 @@
         null,
         1,
         2,
+        null,
+        2,
+        2,
+        null
+      ],
+      "/Users/Guest/Desktop/craftsy/spec/models/review_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
         null
       ],
       "/Users/Guest/Desktop/craftsy/spec/models/user_spec.rb": [
         1,
         null,
         1,
-        null,
+        2,
+        2,
         null
       ],
       "/Users/Guest/Desktop/craftsy/spec/views/products/edit.html.erb_spec.rb": [
@@ -733,6 +810,6 @@
         null
       ]
     },
-    "timestamp": 1499458777
+    "timestamp": 1499468568
   }
 }

@@ -13,9 +13,10 @@
   - [x] Belongs to Admin
 - [ ] Root page - welcome and intro
 - [x] Login and signup pages
-- [ ] View all products
-- [ ] View individual product
-- [ ] Authentication - Users for reviews, Admin for products
+- [x] View all products
+- [x] View individual product
+- [ ] Profile page for each user to see their reviews
+- [ ] Authorization - Users for reviews, Admin for products
   * Unauthenticated can see landing page and all products and individual products
 - [x] Navbar
 - [x] Devise Authentication
@@ -34,3 +35,5 @@
 - [ ] CanCanCan for authorizing Admin accounts
 - [ ] ActiveAdmin to create Admin dashboard
 - [ ] Shopping cart with checkout process (receipt)
+- [ ] Validations
+  * Price, rating
