@@ -10,10 +10,10 @@
   - [ ] Delete any reviews
 - [ ] Review model - content, rating
   - [ ] Belongs to User
-- [ ] Product model - name, picture, description, price, average rating
-  - [ ] Belongs to Admin
+- [x] Product model - name, picture, description, price, average rating
+  - [x] Belongs to Admin
 - [ ] Root page - welcome and intro
-- [ ] Login and signup pages
+- [x] Login and signup pages
 - [ ] View all products
 - [ ] View individual product
 - [ ] Authentication - Users for reviews, Admin for products

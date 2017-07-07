@@ -1,0 +1,25 @@
+<%= render 'layouts/errors', :object => @product %>
+
+<%= form_for @product, url: products_path, html: { multipart: true } do |f| %>
+  <div class='form-group'>
+    <%= f.label :name %>
+    <br>
+    <%= f.text_field :name %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :description %>
+    <br>
+    <%= f.text_field :description %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :price %>
+    <br>
+    <%= f.text_field :price %>
+  </div>
+  <div class='form-group'>
+    <%= f.label :picture %>
+    <br>
+    <%= f.file_field :picture %>
+  </div>
+  <%= f.submit :class => 'btn btn-outline-success'%>
+<% end %>

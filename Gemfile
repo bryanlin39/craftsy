@@ -38,7 +38,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'faker'
 gem 'devise'
-gem "paperclip", "~> 5.0.0"
+gem 'paperclip', '~> 5.0.0'
 
 
 group :development, :test do
