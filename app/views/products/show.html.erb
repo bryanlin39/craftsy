@@ -4,6 +4,8 @@
 <%= image_tag @product.picture.url, :alt => 'product image' %>
 <h4><%= @product.description %></h4>
 
-<%= link_to 'Edit product details', edit_product_path(@product), :class => 'btn btn-outline-info' %>
-<br>
-<%= link_to 'Remove product', product_path(@product), :method => 'delete', :data => { :confirm => 'Are you sure you want to remove this product?' }, :class => 'btn btn-outline-danger' %>
+<% if current_user && current_user.admin %>
+  <%= link_to 'Edit product details', edit_product_path(@product), :class => 'btn btn-outline-info' %>
+  <br>
+  <%= link_to 'Remove product', product_path(@product), :method => 'delete', :data => { :confirm => 'Are you sure you want to remove this product?' }, :class => 'btn btn-outline-danger' %>
+<% end %>
