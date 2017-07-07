@@ -5,8 +5,7 @@
   - [ ] Has many reviews
   - [ ] Add/edit/delete their own reviews
 - [ ] Admin authorization
-  - [ ] Has many products
-  - [ ] Add/edit/delete products
+  - [x] Add/edit/delete products
   - [ ] Delete any reviews
 - [ ] Review model - content, rating
   - [ ] Belongs to User
