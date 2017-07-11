@@ -25,51 +25,73 @@ user = User.create!(
   username: 'user'
 )
 
-Product.create!(
+product1 = Product.create!(
   name: 'Bracelets',
   description: '2 piece set, black and white, stone bracelets',
-  price: 10.00
+  price: 10.00,
+  picture: open('public/images/bracelets.jpg')
 )
-
-4.times do |i|
-  product = Product.create!(
-    name: Faker::Commerce.product_name,
-    description: Faker::Lorem.sentence,
-    price: Faker::Commerce.price
+5.times do |i|
+  product1.reviews.create!(
+    user_id: user.id,
+    content: Faker::Lorem.paragraph(2),
+    rating: Faker::Number.between(1, 5)
   )
-  rand(2..4).times do |i|
-    product.reviews.create!(
-      user_id: user.id,
-      content: Faker::Lorem.paragraph(2),
-      rating: Faker::Number.between(1, 5)
-    )
-  end
 end
 
-# Product.create!(
-#   :name => 'Bracelets',
-#   :description => '2 piece set, black and white, stone bracelets',
-#   :price => 10.00,
-#   :picture => File.join(Rails.root, '/public/images/bracelets.jpg')
-# )
-#
-# Product.create!(
-#   :name => 'Duffel Bag',
-#   :description => 'Weekender traveler bag with leather straps',
-#   :price => 200.00,
-#   :picture => File.join(Rails.root, '/public/images/duffel.jpg')
-# )
-#
-# Product.create!(
-#   :name => 'Bar Cart',
-#   :description => 'Rustic bar cart to hold alcohol',
-#   :price => 180.00,
-#   :picture => File.join(Rails.root, '/public/images/bar_cart.jpg')
-# )
-#
-# Product.create!(
-#   :name => 'Teepee',
-#   :description => 'Mini tent for lazy camping in the backyard and cultural misappropriation',
-#   :price => 60.00,
-#   :picture => File.join(Rails.root, '/public/images/teepee.jpg')
-# )
+product2 = Product.create!(
+  name: 'Duffel Bag',
+  description: 'Weekender traveler bag with leather straps',
+  price: 200.00,
+  picture: open('public/images/duffel.jpg')
+)
+4.times do |i|
+  product2.reviews.create!(
+    user_id: user.id,
+    content: Faker::Lorem.paragraph(2),
+    rating: Faker::Number.between(1, 5)
+  )
+end
+
+product3 = Product.create!(
+  name: 'Bar Cart',
+  description: 'Rustic bar cart to hold alcohol',
+  price: 180.00,
+  picture: open('public/images/bar_cart.jpg')
+)
+2.times do |i|
+  product3.reviews.create!(
+    user_id: user.id,
+    content: Faker::Lorem.paragraph(2),
+    rating: Faker::Number.between(1, 5)
+  )
+end
+
+product4 = Product.create!(
+  name: 'Teepee',
+  description: 'Mini tent for lazy camping in the backyard and cultural misappropriation',
+  price: 60.00,
+  picture: open('public/images/teepee.jpg')
+)
+5.times do |i|
+  product4.reviews.create!(
+    user_id: user.id,
+    content: Faker::Lorem.paragraph(2),
+    rating: Faker::Number.between(1, 5)
+  )
+end
+
+# 4.times do |i|
+#   product = Product.create!(
+#     name: Faker::Commerce.product_name,
+#     description: Faker::Lorem.sentence,
+#     price: Faker::Commerce.price
+#   )
+#   rand(2..4).times do |i|
+#     product.reviews.create!(
+#       user_id: user.id,
+#       content: Faker::Lorem.paragraph(2),
+#       rating: Faker::Number.between(1, 5)
+#     )
+#   end
+# end

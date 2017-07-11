@@ -24,22 +24,26 @@
           <li class="nav-item">
             <a class="nav-link" href="/products">Marketplace</a>
           </li>
+        </ul>
+
+        <ul class="navbar-nav">
           <% if !current_user %>
-            <li class="nav-item">
-              <a class="nav-link" href="/users/sign_up">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/users/sign_in">Sign In</a>
-            </li>
+          <li>
+            <a class="nav-link" href="/users/sign_up">Register</a>
+          </li>
+          <li>
+            <a class="nav-link" href="/users/sign_in">Sign In</a>
+          </li>
           <% else %>
-            <li class="nav-item">
-              <a class="nav-link" href="/users/<%= current_user.id %>"><%= current_user.username %></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/users/sign_out" data-method='delete'>Sign Out</a>
-            </li>
+          <li>
+            <a class="nav-link" href="/users/<%= current_user.id %>"><%= current_user.email %></a>
+          </li>
+          <li>
+            <a class="nav-link" href="/users/sign_out" data-method='delete'>Sign Out</a>
+          </li>
           <% end %>
         </ul>
+
         <!-- <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
