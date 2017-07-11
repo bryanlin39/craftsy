@@ -25,6 +25,7 @@
 - [ ] Factory Girl testing
 - [ ] 80% SimpleCov
 - [x] Seed database
+- [ ] Save username upon registration
 
 
 ### Further Exploration
