@@ -12,7 +12,7 @@
   - [x] Belongs to Product
 - [x] Product model - name, picture, description, price, average rating
   - [x] Belongs to Admin
-- [ ] Root page - welcome and intro
+- [x] Root page - welcome and intro
 - [x] Login and signup pages
 - [x] View all products
 - [x] View individual product
