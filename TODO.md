@@ -22,10 +22,11 @@
 - [ ] Authorization - Users can only edit/delete THEIR OWN reviews
 - [x] Navbar
 - [x] Devise Authentication
-- [ ] Factory Girl testing
-- [ ] 80% SimpleCov
+- [x] Factory Girl testing
+- [x] 80% SimpleCov
 - [x] Seed database
 - [ ] Save username upon registration
+- [ ] Average rating
 
 
 ### Further Exploration
